@@ -6,11 +6,29 @@ function Home() {
   const [courses, setCourses] = useState([]);
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  const fetchCourses = () => {
+    setLoading(true);
+    setError("");
+    getCourses()
+      .then((data) => {
+        console.log("Courses fetched:", data);
+        if (Array.isArray(data)) {
+          setCourses(data);
+        } else {
+          setError("Unexpected response from server.");
+        }
+      })
+      .catch((err) => {
+        console.error("Fetch error:", err);
+        setError("Failed to load courses. The server may be starting up — please try again in a moment.");
+      })
+      .finally(() => setLoading(false));
+  };
 
   useEffect(() => {
-    getCourses()
-      .then((data) => setCourses(data))
-      .finally(() => setLoading(false));
+    fetchCourses();
   }, []);
 
   const filteredCourses = courses.filter((course) =>
@@ -45,6 +63,11 @@ function Home() {
 
         {loading ? (
           <h5 className="text-muted">Loading courses...</h5>
+        ) : error ? (
+          <div className="text-center py-4">
+            <h5 className="text-danger">{error}</h5>
+            <button className="btn btn-dark mt-2" onClick={fetchCourses}>Retry</button>
+          </div>
         ) : filteredCourses.length === 0 ? (
           <h5 className="text-muted">No courses found.</h5>
         ) : (
