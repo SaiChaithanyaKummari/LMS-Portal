@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -7,7 +7,16 @@ import Player from './pages/Player';
 import Mycourses from './pages/Mycourses';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import AdminPortal from './pages/AdminPortal';
 
+
+const ProtectedRoute = ({ children }) => {
+  const user = localStorage.getItem("user");
+  if (!user) {
+    return <Navigate to="/login" replace />;
+  }
+  return children;
+};
 
 function App() {
   return (
@@ -18,10 +27,11 @@ function App() {
         <Routes>
           <Route path="/Login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/coursesdetails/:id" element={<Coursedetails />} />
-          <Route path="/mycourses" element={<Mycourses />} />
-          <Route path="/player/:id/:lesson" element={<Player />} />
+          <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
+          <Route path="/coursesdetails/:id" element={<ProtectedRoute><Coursedetails /></ProtectedRoute>} />
+          <Route path="/mycourses" element={<ProtectedRoute><Mycourses /></ProtectedRoute>} />
+          <Route path="/player/:id/:lesson" element={<ProtectedRoute><Player /></ProtectedRoute>} />
+          <Route path="/admin" element={<AdminPortal />} />
         </Routes>
       </BrowserRouter>
     </div>

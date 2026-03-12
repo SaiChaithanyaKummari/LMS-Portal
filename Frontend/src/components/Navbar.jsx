@@ -50,13 +50,23 @@ function Navbar() {
 
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto" style={{ fontSize: 16, gap: 20 }}>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/">
-                Home
-              </NavLink>
-            </li>
-
             {user && (
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/">
+                  Home
+                </NavLink>
+              </li>
+            )}
+
+            {user && user.role === "admin" && (
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/admin">
+                  Admin Portal
+                </NavLink>
+              </li>
+            )}
+
+            {user && user.role !== "admin" && (
               <li className="nav-item">
                 <NavLink className="nav-link" to="/mycourses">
                   My Courses
