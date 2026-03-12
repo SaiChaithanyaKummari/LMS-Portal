@@ -18,13 +18,12 @@ function Coursecard({ course }) {
   };
 
   return (
-    <div className="card h-100 shadow-sm border-0"
+    <div className="card h-100 shadow-sm border"
       style={{
         borderRadius: 16,
         overflow: "hidden",
-        background:
-          "linear-gradient(145deg, rgba(15,23,42,0.98), rgba(30,64,175,0.9))",
-        color: "white",
+        background: "#ffffff",
+        color: "#212529",
       }}
     >
       <div style={{ height: 180, overflow: "hidden" }}>
@@ -37,14 +36,14 @@ function Coursecard({ course }) {
       </div>
       <div className="card-body d-flex flex-column">
         <h5 className="card-title mb-2">{course.title}</h5>
-        <p className="card-text mb-1" style={{ fontSize: 14 }}>
+        <p className="card-text text-muted mb-1" style={{ fontSize: 14 }}>
           {course.instructor}
         </p>
-        <p className="card-text text-light mb-3" style={{ fontSize: 13 }}>
+        <p className="card-text text-secondary mb-3" style={{ fontSize: 13 }}>
           {course.duration}
         </p>
         <button
-          className="btn btn-success mt-auto"
+          className="btn btn-dark mt-auto"
           onClick={handleViewCourse}
         >
           Start learning

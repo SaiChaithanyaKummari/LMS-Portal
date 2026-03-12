@@ -37,8 +37,8 @@ function Login() {
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center vh-100"style={{background:"#C9D6DF"}}>
-      <div className="card p-4 shadow-lg border-0" style={{width: "420px",borderRadius: "20px",background:"linear-gradient(145deg, rgba(255,255,255,0.95), rgba(248,250,252,0.98))",}}>
+    <div className="d-flex justify-content-center align-items-center vh-100"style={{background:"#ffffff"}}>
+      <div className="card p-4 shadow-lg border" style={{width: "420px",borderRadius: "20px",background:"#ffffff"}}>
         <h3 className="text-center mb-3 fw-bold">Welcome back</h3>
         <p className="text-center text-muted mb-4">Log in to continue your learning journey.</p>
         <form onSubmit={handleLogin}>
@@ -52,7 +52,7 @@ function Login() {
             <button className="btn btn-link p-0 mt-1" type="button">Forgot Password?</button>
           </div>
           {error && <div className="alert alert-danger py-2">{error}</div>}
-          <button className="btn btn-success w-100 mt-2" type="submit">Log in</button>
+          <button className="btn btn-dark w-100 mt-2" type="submit">Log in</button>
         </form>
         <p className="text-center mt-3 mb-0">Don&apos;t have an account?{" "}<a href="/signup" className="fw-semibold">Sign up</a></p>
       </div>

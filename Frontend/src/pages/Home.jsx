@@ -22,15 +22,14 @@ function Home() {
       className="py-4"
       style={{
         minHeight: "100vh",
-        background:
-          "radial-gradient(circle at top left, #3b82f6 0, transparent 55%), radial-gradient(circle at bottom right, #22c55e 0, transparent 55%), #0f172a",
+        background: "#ffffff",
       }}
     >
       <div className="container">
         <div className="d-flex justify-content-between align-items-center mb-3">
           <div>
-            <h2 className="fw-bold text-black mb-1">Available Courses</h2>
-            <p className="text-black mb-0">
+            <h2 className="fw-bold text-dark mb-1">Available Courses</h2>
+            <p className="text-muted mb-0">
               Browse and start learning from our course catalog.
             </p>
           </div>
@@ -45,9 +44,9 @@ function Home() {
         />
 
         {loading ? (
-          <h5 style={{ color: "white" }}>Loading courses...</h5>
+          <h5 className="text-muted">Loading courses...</h5>
         ) : filteredCourses.length === 0 ? (
-          <h5 style={{ color: "white" }}>No courses found.</h5>
+          <h5 className="text-muted">No courses found.</h5>
         ) : (
           <div className="row g-4">
             {filteredCourses.map((course) => (

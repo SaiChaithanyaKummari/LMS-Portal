@@ -22,7 +22,7 @@ export default function Coursesdetails() {
   if (loading) {
     return (
       <div className="container mt-4">
-        <h2 style={{ color: "white" }}>Loading course...</h2>
+        <h2 className="text-muted">Loading course...</h2>
       </div>
     );
   }
@@ -30,7 +30,7 @@ export default function Coursesdetails() {
   if (!course) {
     return (
       <div className="container mt-4">
-        <h2 style={{ color: "white" }}>Course not found.</h2>
+        <h2 className="text-muted">Course not found.</h2>
       </div>
     );
   }
@@ -63,7 +63,7 @@ export default function Coursesdetails() {
   };
 
   return (
-    <div className="py-4"style={{minHeight: "100vh",background: "radial-gradient(circle at top left, #3b82f6 0, transparent 55%), radial-gradient(circle at bottom right, #22c55e 0, transparent 55%), #0f172a"}}>
+    <div className="py-4"style={{minHeight: "100vh",background: "#ffffff"}}>
       <div className="container">
         <div className="card border-0 shadow-lg mb-4"style={{ borderRadius: 20, overflow: "hidden" }}>
           <div className="row g-0">
@@ -79,16 +79,16 @@ export default function Coursesdetails() {
                 {course.level && <p className="card-text mb-1"><strong>Level:</strong> {course.level}</p>}
                 {course.lessons && <p className="card-text mb-2"><strong>Lessons:</strong> {course.lessons.join(", ")}</p>}
                 <div className="mt-auto d-flex gap-3">
-                  <button className="btn btn-success" onClick={handleEnroll}>
+                  <button className="btn btn-dark" onClick={handleEnroll}>
                     Enroll now
                   </button>
-                  <button className="btn btn-outline-success" onClick={() => navigate(`/player/${course.id}/0`)}>Play video</button>
+                  <button className="btn btn-outline-dark" onClick={() => navigate(`/player/${course.id}/0`)}>Play video</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <h4 className="text-white mb-4">Other available courses</h4>
+        <h4 className="text-dark mb-4">Other available courses</h4>
         <div className="row g-4">
           {otherCourses.map((c) => (
             <div className="col-md-3" key={c.id}>

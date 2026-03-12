@@ -43,10 +43,10 @@ function Signup() {
   return (
     <div
       className="d-flex justify-content-center align-items-center vh-100"
-      style={{background: "#C9D6DF"}}>
+      style={{background: "#ffffff"}}>
       <div
         className="card p-4 shadow-lg border-0"
-        style={{width: "420px",borderRadius: "20px",background:"linear-gradient(145deg, rgba(255,255,255,0.95), rgba(248,250,252,0.98))"}}>
+        style={{width: "420px",borderRadius: "20px",background:"#ffffff"}}>
         <h3 className="text-center mb-3 fw-bold">Create your account</h3>
         <form onSubmit={handleSignup}>
           <div className="mb-3">
@@ -67,7 +67,7 @@ function Signup() {
           </div>
           {error && <div className="alert alert-danger py-2">{error}</div>}
           {success && <div className="alert alert-success py-2">{success}</div>}
-          <button className="btn btn-success w-100 mt-2" type="submit">
+          <button className="btn btn-dark w-100 mt-2" type="submit">
             Sign up
           </button>
         </form>

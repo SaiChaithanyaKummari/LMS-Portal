@@ -25,8 +25,7 @@ function Navbar() {
     <nav
       className="navbar navbar-expand-lg navbar-dark"
       style={{
-        background:
-          "linear-gradient(90deg, #020617 0%, #111827 40%, #1e293b 100%)",
+        background: "#000",
         position: "sticky",
         top: 0,
         zIndex: 100,

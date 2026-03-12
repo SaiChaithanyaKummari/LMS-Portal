@@ -46,7 +46,7 @@ export default function Player() {
   if (loading || !course) {
     return (
       <div className="container mt-4">
-        <h2 style={{ color: "white" }}>Loading player...</h2>
+        <h2 className="text-muted">Loading player...</h2>
       </div>
     );
   }
@@ -113,7 +113,7 @@ export default function Player() {
       className="py-4"
       style={{
         minHeight: "100vh",
-        background: "#0f172a",
+        background: "#ffffff",
       }}
     >
       <div className="container">
@@ -178,7 +178,7 @@ export default function Player() {
               width: "30%",
               padding: "30px 15px",
               marginBottom: 40,
-              backgroundColor: "#C9D6DF",
+              backgroundColor: "#f8f9fa",
               borderRadius: 20,
             }}
           >
