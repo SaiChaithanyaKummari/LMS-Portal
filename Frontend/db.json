@@ -1,0 +1,1211 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "title": "React for Beginners",
+      "instructor": "John Doe",
+      "duration": "6 Weeks",
+      "level": "Beginner",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+      "description": "Learn the fundamentals of React.js and build dynamic user interfaces using reusable components, JSX, and hooks.",
+      "lessons": [
+        "Introduction to React",
+        "Setting up React Environment",
+        "JSX and Rendering",
+        "Components and Props",
+        "State and Lifecycle",
+        "React Hooks",
+        "Event Handling",
+        "Mini React Project"
+      ],
+      "videos": [
+        {
+          "id": "v1_1",
+          "title": "React Crash Course 2025",
+          "duration": "1:23:45",
+          "url": "https://www.youtube.com/watch?v=x4rFhThSX04",
+          "thumbnail": "https://img.youtube.com/vi/x4rFhThSX04/maxresdefault.jpg"
+        },
+        {
+          "id": "v1_2",
+          "title": "React Components & Props Explained",
+          "duration": "18:20",
+          "url": "https://www.youtube.com/watch?v=Y2hgEGPzTZY",
+          "thumbnail": "https://img.youtube.com/vi/Y2hgEGPzTZY/maxresdefault.jpg"
+        },
+        {
+          "id": "v1_3",
+          "title": "React State & Lifecycle Methods",
+          "duration": "22:15",
+          "url": "https://www.youtube.com/watch?v=4pO-HcG2igk",
+          "thumbnail": "https://img.youtube.com/vi/4pO-HcG2igk/maxresdefault.jpg"
+        },
+        {
+          "id": "v1_4",
+          "title": "React Hooks Tutorial (useState, useEffect)",
+          "duration": "25:30",
+          "url": "https://www.youtube.com/watch?v=TNhaISOUy6Q",
+          "thumbnail": "https://img.youtube.com/vi/TNhaISOUy6Q/maxresdefault.jpg"
+        },
+        {
+          "id": "v1_5",
+          "title": "Event Handling in React",
+          "duration": "14:45",
+          "url": "https://www.youtube.com/watch?v=Znqv84xi8Vs",
+          "thumbnail": "https://img.youtube.com/vi/Znqv84xi8Vs/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Java Full Stack Development",
+      "instructor": "Jane Smith",
+      "duration": "8 Weeks",
+      "level": "Intermediate",
+      "thumbnail": "https://vcubesoftsolutions.com/wp-content/uploads/2023/11/image-1024x576.jpg",
+      "description": "Build full stack applications using Java, Spring Boot, React, and MySQL.",
+      "lessons": [
+        "Full Stack Overview",
+        "Frontend Basics",
+        "Java Fundamentals",
+        "Spring Boot Introduction",
+        "REST API Development",
+        "Database Integration",
+        "Authentication",
+        "Project Deployment"
+      ],
+      "videos": [
+        {
+          "id": "v2_1",
+          "title": "Full Stack, Cloud, Microservices with Docker, Kubernetes and Spring Boot",
+          "duration": "2:14:30",
+          "url": "https://www.classcentral.com/course/youtube-full-stack-cloud-microservices-with-docker-kubernetes-and-spring-boot-java-architecture-and-patterns-53289",
+          "thumbnail": "https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg"
+        },
+        {
+          "id": "v2_2",
+          "title": "Web Applications with Spring and Spring Boot",
+          "duration": "1:45:20",
+          "url": "https://www.classcentral.com/course/youtube-full-stack-cloud-microservices-with-docker-kubernetes-and-spring-boot-java-architecture-and-patterns-53289",
+          "thumbnail": "https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg"
+        },
+        {
+          "id": "v2_3",
+          "title": "REST & SOAP Web Services with Spring Boot",
+          "duration": "1:52:10",
+          "url": "https://www.classcentral.com/course/youtube-full-stack-cloud-microservices-with-docker-kubernetes-and-spring-boot-java-architecture-and-patterns-53289",
+          "thumbnail": "https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg"
+        },
+        {
+          "id": "v2_4",
+          "title": "React Frontend Integration with Spring Boot",
+          "duration": "38:25",
+          "url": "https://www.youtube.com/watch?v=6dFvZ0QW1EQ",
+          "thumbnail": "https://img.youtube.com/vi/6dFvZ0QW1EQ/maxresdefault.jpg"
+        },
+        {
+          "id": "v2_5",
+          "title": "Spring Data JPA & Hibernate",
+          "duration": "42:15",
+          "url": "https://www.youtube.com/watch?v=8SGI_XS5OPw",
+          "thumbnail": "https://img.youtube.com/vi/8SGI_XS5OPw/maxresdefault.jpg"
+        },
+        {
+          "id": "v2_6",
+          "title": "Spring Security & JWT Authentication",
+          "duration": "55:40",
+          "url": "https://www.youtube.com/watch?v=VVn9OG9nfH0",
+          "thumbnail": "https://img.youtube.com/vi/VVn9OG9nfH0/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Python for Data Science",
+      "instructor": "Michael Johnson",
+      "duration": "10 Weeks",
+      "level": "Beginner",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+      "description": "Use Python libraries like NumPy, Pandas, and Matplotlib for data analysis and visualization.",
+      "lessons": [
+        "Python Basics",
+        "Data Structures",
+        "NumPy Fundamentals",
+        "Pandas Data Analysis",
+        "Data Cleaning",
+        "Data Visualization",
+        "Exploratory Data Analysis",
+        "Mini Data Project"
+      ],
+      "videos": [
+        {
+          "id": "v3_1",
+          "title": "Learn Python for Data Science – Full Course for Beginners",
+          "duration": "4:52:30",
+          "url": "https://www.freecodecamp.org/news/learn-python-for-data-science-full-course/",
+          "thumbnail": "https://img.youtube.com/vi/LHBE6Q9XlzI/maxresdefault.jpg"
+        },
+        {
+          "id": "v3_2",
+          "title": "NumPy Crash Course",
+          "duration": "1:32:15",
+          "url": "https://www.youtube.com/watch?v=GB9ByFAIAH4",
+          "thumbnail": "https://img.youtube.com/vi/GB9ByFAIAH4/maxresdefault.jpg"
+        },
+        {
+          "id": "v3_3",
+          "title": "Pandas Tutorial (Data Analysis)",
+          "duration": "2:15:40",
+          "url": "https://www.youtube.com/watch?v=vmEHCJofslg",
+          "thumbnail": "https://img.youtube.com/vi/vmEHCJofslg/maxresdefault.jpg"
+        },
+        {
+          "id": "v3_4",
+          "title": "Data Cleaning with Pandas",
+          "duration": "48:20",
+          "url": "https://www.youtube.com/watch?v=bDhvCp3_zY8",
+          "thumbnail": "https://img.youtube.com/vi/bDhvCp3_zY8/maxresdefault.jpg"
+        },
+        {
+          "id": "v3_5",
+          "title": "Matplotlib Tutorial (Data Visualization)",
+          "duration": "1:05:35",
+          "url": "https://www.youtube.com/watch?v=UO98lJQ3QGI",
+          "thumbnail": "https://img.youtube.com/vi/UO98lJQ3QGI/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Machine Learning Fundamentals",
+      "instructor": "Emily Davis",
+      "duration": "12 Weeks",
+      "level": "Intermediate",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
+      "description": "Understand core machine learning algorithms and build predictive models using Python.",
+      "lessons": [
+        "Introduction to ML",
+        "Data Preprocessing",
+        "Regression Algorithms",
+        "Classification Algorithms",
+        "Decision Trees",
+        "Clustering",
+        "Model Evaluation",
+        "ML Project"
+      ],
+      "videos": [
+        {
+          "id": "v4_1",
+          "title": "Essential Machine Learning Concepts Animated",
+          "duration": "1:15:20",
+          "url": "https://www.freecodecamp.org/news/essential-machine-learning-concepts-animated/",
+          "thumbnail": "https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg"
+        },
+        {
+          "id": "v4_2",
+          "title": "Data Preprocessing for Machine Learning",
+          "duration": "35:10",
+          "url": "https://www.youtube.com/watch?v=9yl6-HEY7_s",
+          "thumbnail": "https://img.youtube.com/vi/9yl6-HEY7_s/maxresdefault.jpg"
+        },
+        {
+          "id": "v4_3",
+          "title": "Linear Regression & Gradient Descent",
+          "duration": "1:08:45",
+          "url": "https://www.youtube.com/watch?v=4b4MUYve_U8",
+          "thumbnail": "https://img.youtube.com/vi/4b4MUYve_U8/maxresdefault.jpg"
+        },
+        {
+          "id": "v4_4",
+          "title": "Classification Algorithms (Logistic Regression, SVM, KNN)",
+          "duration": "1:45:30",
+          "url": "https://www.youtube.com/watch?v=H6g3EkWnMqA",
+          "thumbnail": "https://img.youtube.com/vi/H6g3EkWnMqA/maxresdefault.jpg"
+        },
+        {
+          "id": "v4_5",
+          "title": "Decision Trees & Random Forest",
+          "duration": "52:15",
+          "url": "https://www.youtube.com/watch?v=7VeUPuFGJHk",
+          "thumbnail": "https://img.youtube.com/vi/7VeUPuFGJHk/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Advanced JavaScript",
+      "instructor": "David Wilson",
+      "duration": "7 Weeks",
+      "level": "Advanced",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+      "description": "Deep dive into modern JavaScript including async programming, closures, and ES6 features.",
+      "lessons": [
+        "JavaScript Closures",
+        "Scope and Hoisting",
+        "Promises",
+        "Async/Await",
+        "ES6 Modules",
+        "Advanced Array Methods",
+        "Design Patterns",
+        "Real-world Project"
+      ],
+      "videos": [
+        {
+          "id": "v5_1",
+          "title": "JavaScript Closures & Scope Explained",
+          "duration": "24:30",
+          "url": "https://www.youtube.com/watch?v=1JSyBILtpJk",
+          "thumbnail": "https://img.youtube.com/vi/1JSyBILtpJk/maxresdefault.jpg"
+        },
+        {
+          "id": "v5_2",
+          "title": "Hoisting in JavaScript",
+          "duration": "18:45",
+          "url": "https://www.youtube.com/watch?v=Fnlnw8uY6jo",
+          "thumbnail": "https://img.youtube.com/vi/Fnlnw8uY6jo/maxresdefault.jpg"
+        },
+        {
+          "id": "v5_3",
+          "title": "JavaScript Promises & Async/Await",
+          "duration": "32:10",
+          "url": "https://www.youtube.com/watch?v=vn3tm0quoqE",
+          "thumbnail": "https://img.youtube.com/vi/vn3tm0quoqE/maxresdefault.jpg"
+        },
+        {
+          "id": "v5_4",
+          "title": "ES6 Modules & Import/Export",
+          "duration": "20:15",
+          "url": "https://www.youtube.com/watch?v=cRHQNNcYf6s",
+          "thumbnail": "https://img.youtube.com/vi/cRHQNNcYf6s/maxresdefault.jpg"
+        },
+        {
+          "id": "v5_5",
+          "title": "Advanced Array Methods (map, filter, reduce)",
+          "duration": "27:40",
+          "url": "https://www.youtube.com/watch?v=R8rmfD9Y5-c",
+          "thumbnail": "https://img.youtube.com/vi/R8rmfD9Y5-c/maxresdefault.jpg"
+        },
+        {
+          "id": "v5_6",
+          "title": "JavaScript Design Patterns",
+          "duration": "1:10:25",
+          "url": "https://www.youtube.com/watch?v=YJVj4lAS1J8",
+          "thumbnail": "https://img.youtube.com/vi/YJVj4lAS1J8/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "UI/UX Design Fundamentals",
+      "instructor": "Sophia Brown",
+      "duration": "5 Weeks",
+      "level": "Beginner",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+      "description": "Learn the basics of UI/UX design, user research, wireframing, and prototyping using Figma.",
+      "lessons": [
+        "Introduction to UX",
+        "User Research",
+        "Wireframing",
+        "Prototyping",
+        "Design Principles",
+        "Usability Testing"
+      ],
+      "videos": [
+        {
+          "id": "v6_1",
+          "title": "UI/UX Design Tutorial – Wireframe, Prototype, Figma",
+          "duration": "1:38:50",
+          "url": "https://www.youtube.com/watch?v=c9Wg6Cb_YlU",
+          "thumbnail": "https://img.youtube.com/vi/c9Wg6Cb_YlU/maxresdefault.jpg"
+        },
+        {
+          "id": "v6_2",
+          "title": "User Research Methods",
+          "duration": "22:15",
+          "url": "https://www.youtube.com/watch?v=8YQv9S4zq1I",
+          "thumbnail": "https://img.youtube.com/vi/8YQv9S4zq1I/maxresdefault.jpg"
+        },
+        {
+          "id": "v6_3",
+          "title": "Figma Tutorial for Beginners (Wireframing)",
+          "duration": "45:20",
+          "url": "https://www.youtube.com/watch?v=HZuk6Wkx_Eg",
+          "thumbnail": "https://img.youtube.com/vi/HZuk6Wkx_Eg/maxresdefault.jpg"
+        },
+        {
+          "id": "v6_4",
+          "title": "Prototyping in Figma",
+          "duration": "28:40",
+          "url": "https://www.youtube.com/watch?v=-d6zNGeFk0Y",
+          "thumbnail": "https://img.youtube.com/vi/-d6zNGeFk0Y/maxresdefault.jpg"
+        },
+        {
+          "id": "v6_5",
+          "title": "Design Principles for UI/UX",
+          "duration": "19:55",
+          "url": "https://www.youtube.com/watch?v=a9pQjp6SV6g",
+          "thumbnail": "https://img.youtube.com/vi/a9pQjp6SV6g/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Deep Learning with TensorFlow",
+      "instructor": "Daniel Martinez",
+      "duration": "9 Weeks",
+      "level": "Advanced",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg",
+      "description": "Build deep learning models using TensorFlow and neural network architectures.",
+      "lessons": [
+        "Neural Networks Basics",
+        "TensorFlow Setup",
+        "Deep Neural Networks",
+        "CNN Models",
+        "RNN Models",
+        "Model Optimization",
+        "AI Project"
+      ],
+      "videos": [
+        {
+          "id": "v7_1",
+          "title": "Deep Learning With Tensorflow 2.0, Keras and Python",
+          "duration": "14:00:00",
+          "url": "https://www.classcentral.com/course/youtube-deep-learning-with-tensorflow-2-0-keras-and-python-54447",
+          "thumbnail": "https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg"
+        },
+        {
+          "id": "v7_2",
+          "title": "Neural Networks Explained",
+          "duration": "18:30",
+          "url": "https://www.youtube.com/watch?v=aircAruvnKk",
+          "thumbnail": "https://img.youtube.com/vi/aircAruvnKk/maxresdefault.jpg"
+        },
+        {
+          "id": "v7_3",
+          "title": "Convolutional Neural Networks (CNN) Tutorial",
+          "duration": "1:25:45",
+          "url": "https://www.youtube.com/watch?v=YRhxdVk_sIs",
+          "thumbnail": "https://img.youtube.com/vi/YRhxdVk_sIs/maxresdefault.jpg"
+        },
+        {
+          "id": "v7_4",
+          "title": "Recurrent Neural Networks (RNN) & LSTMs",
+          "duration": "1:10:20",
+          "url": "https://www.youtube.com/watch?v=WCUNPb-5EYI",
+          "thumbnail": "https://img.youtube.com/vi/WCUNPb-5EYI/maxresdefault.jpg"
+        },
+        {
+          "id": "v7_5",
+          "title": "TensorFlow Model Optimization",
+          "duration": "35:15",
+          "url": "https://www.youtube.com/watch?v=Givp7Lp5pAQ",
+          "thumbnail": "https://img.youtube.com/vi/Givp7Lp5pAQ/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "SQL and Database Management",
+      "instructor": "Olivia Anderson",
+      "duration": "6 Weeks",
+      "level": "Beginner",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png",
+      "description": "Learn SQL queries, relational databases, and data management techniques.",
+      "lessons": [
+        "Database Concepts",
+        "SQL Basics",
+        "CRUD Operations",
+        "Joins and Relationships",
+        "Indexes",
+        "Database Optimization"
+      ],
+      "videos": [
+        {
+          "id": "v8_1",
+          "title": "Harvard's CS50 Introduction to Databases with SQL",
+          "duration": "2:30:00",
+          "url": "https://www.linkedin.com/posts/suphanfayong_sql-databases-datascience-activity-7384664319529148416-YJo3",
+          "thumbnail": "https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg"
+        },
+        {
+          "id": "v8_2",
+          "title": "SQL Tutorial - Full Course for Beginners",
+          "duration": "4:20:10",
+          "url": "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+          "thumbnail": "https://img.youtube.com/vi/HXV3zeQKqGY/maxresdefault.jpg"
+        },
+        {
+          "id": "v8_3",
+          "title": "SQL Joins Explained",
+          "duration": "26:35",
+          "url": "https://www.youtube.com/watch?v=9yeOJ0ZMUYw",
+          "thumbnail": "https://img.youtube.com/vi/9yeOJ0ZMUYw/maxresdefault.jpg"
+        },
+        {
+          "id": "v8_4",
+          "title": "Database Indexes Explained",
+          "duration": "14:20",
+          "url": "https://www.youtube.com/watch?v=fsG1XaZEh78",
+          "thumbnail": "https://img.youtube.com/vi/fsG1XaZEh78/maxresdefault.jpg"
+        },
+        {
+          "id": "v8_5",
+          "title": "SQL Query Optimization",
+          "duration": "32:45",
+          "url": "https://www.youtube.com/watch?v=BHwzDmr6d7s",
+          "thumbnail": "https://img.youtube.com/vi/BHwzDmr6d7s/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Node.js Backend Development",
+      "instructor": "Chris Taylor",
+      "duration": "7 Weeks",
+      "level": "Intermediate",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+      "description": "Build scalable backend APIs using Node.js, Express, and MongoDB.",
+      "lessons": [
+        "Node.js Basics",
+        "Express Framework",
+        "REST APIs",
+        "Authentication",
+        "Database Integration",
+        "API Security",
+        "Backend Project"
+      ],
+      "videos": [
+        {
+          "id": "v9_1",
+          "title": "Intro to Backend Web Development – Node.js, Express, MongoDB",
+          "duration": "4:38:00",
+          "url": "https://www.freecodecamp.org/news/intro-to-backend-web-development-nodejs-express-mongodb/",
+          "thumbnail": "https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg"
+        },
+        {
+          "id": "v9_2",
+          "title": "Node.js & Express.js Tutorial",
+          "duration": "1:48:20",
+          "url": "https://www.youtube.com/watch?v=Oe421EPjeBE",
+          "thumbnail": "https://img.youtube.com/vi/Oe421EPjeBE/maxresdefault.jpg"
+        },
+        {
+          "id": "v9_3",
+          "title": "REST API with Node.js, Express & MongoDB",
+          "duration": "1:15:30",
+          "url": "https://www.youtube.com/watch?v=pKd0Rpw7O48",
+          "thumbnail": "https://img.youtube.com/vi/pKd0Rpw7O48/maxresdefault.jpg"
+        },
+        {
+          "id": "v9_4",
+          "title": "JWT Authentication with Node.js",
+          "duration": "32:10",
+          "url": "https://www.youtube.com/watch?v=mbsmsi7l3r4",
+          "thumbnail": "https://img.youtube.com/vi/mbsmsi7l3r4/maxresdefault.jpg"
+        },
+        {
+          "id": "v9_5",
+          "title": "MongoDB with Node.js",
+          "duration": "41:25",
+          "url": "https://www.youtube.com/watch?v=-0X8mr6Q8Ew",
+          "thumbnail": "https://img.youtube.com/vi/-0X8mr6Q8Ew/maxresdefault.jpg"
+        },
+        {
+          "id": "v9_6",
+          "title": "Node.js API Security Best Practices",
+          "duration": "28:50",
+          "url": "https://www.youtube.com/watch?v=2UXlMGb1w88",
+          "thumbnail": "https://img.youtube.com/vi/2UXlMGb1w88/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Spring Boot for Beginners",
+      "instructor": "Amit Kumar",
+      "duration": "6 Weeks",
+      "level": "Beginner",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/7/79/Spring_Boot.svg",
+      "description": "Learn to build backend applications using Spring Boot and REST APIs.",
+      "lessons": [
+        "Spring Framework Basics",
+        "Spring Boot Setup",
+        "REST APIs",
+        "Database Integration",
+        "Security Basics",
+        "Project Development"
+      ],
+      "videos": [
+        {
+          "id": "v10_1",
+          "title": "Spring Boot Tutorial for Beginners [2025]",
+          "duration": "1:10:45",
+          "url": "https://www.youtube.com/watch?v=gJrjgg1KVL4",
+          "thumbnail": "https://img.youtube.com/vi/gJrjgg1KVL4/maxresdefault.jpg"
+        },
+        {
+          "id": "v10_2",
+          "title": "Spring Initializr & Project Setup",
+          "duration": "12:30",
+          "url": "https://github.com/disouzam/spring-boot-tutorial-for-beginners-mosh-hamedani",
+          "thumbnail": "https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg"
+        },
+        {
+          "id": "v10_3",
+          "title": "Building REST APIs with Spring Boot",
+          "duration": "48:20",
+          "url": "https://www.youtube.com/watch?v=vtPkZShrvXQ",
+          "thumbnail": "https://img.youtube.com/vi/vtPkZShrvXQ/maxresdefault.jpg"
+        },
+        {
+          "id": "v10_4",
+          "title": "Spring Data JPA & Hibernate",
+          "duration": "55:15",
+          "url": "https://www.youtube.com/watch?v=8SGI_XS5OPw",
+          "thumbnail": "https://img.youtube.com/vi/8SGI_XS5OPw/maxresdefault.jpg"
+        },
+        {
+          "id": "v10_5",
+          "title": "Spring Security Basics & JWT",
+          "duration": "1:02:40",
+          "url": "https://www.youtube.com/watch?v=VVn9OG9nfH0",
+          "thumbnail": "https://img.youtube.com/vi/VVn9OG9nfH0/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Angular Complete Guide",
+      "instructor": "Sarah Wilson",
+      "duration": "8 Weeks",
+      "level": "Intermediate",
+      "thumbnail": "https://img-c.udemycdn.com/course/480x270/756150_c033_4.jpg",
+      "description": "Master Angular framework for building dynamic web applications.",
+      "lessons": [
+        "Angular Introduction",
+        "Components and Modules",
+        "Services",
+        "Routing",
+        "Forms",
+        "HTTP Requests",
+        "Angular Project"
+      ],
+      "videos": [
+        {
+          "id": "v11_1",
+          "title": "Angular Crash Course (Traversy Media)",
+          "duration": "1:18:30",
+          "url": "https://www.youtube.com/watch?v=3dHNOWTI7H8",
+          "thumbnail": "https://img.youtube.com/vi/3dHNOWTI7H8/maxresdefault.jpg"
+        },
+        {
+          "id": "v11_2",
+          "title": "Angular Components & Data Binding",
+          "duration": "24:15",
+          "url": "https://www.youtube.com/watch?v=zKj0m1f9M4M",
+          "thumbnail": "https://img.youtube.com/vi/zKj0m1f9M4M/maxresdefault.jpg"
+        },
+        {
+          "id": "v11_3",
+          "title": "Angular Services & Dependency Injection",
+          "duration": "22:40",
+          "url": "https://www.youtube.com/watch?v=oeFYnREf3sA",
+          "thumbnail": "https://img.youtube.com/vi/oeFYnREf3sA/maxresdefault.jpg"
+        },
+        {
+          "id": "v11_4",
+          "title": "Angular Routing & Navigation",
+          "duration": "29:10",
+          "url": "https://www.youtube.com/watch?v=Nehk4tZnMlI",
+          "thumbnail": "https://img.youtube.com/vi/Nehk4tZnMlI/maxresdefault.jpg"
+        },
+        {
+          "id": "v11_5",
+          "title": "Angular Forms (Template-driven & Reactive)",
+          "duration": "36:25",
+          "url": "https://www.youtube.com/watch?v=-bGb1RKDGgQ",
+          "thumbnail": "https://img.youtube.com/vi/-bGb1RKDGgQ/maxresdefault.jpg"
+        },
+        {
+          "id": "v11_6",
+          "title": "Angular HTTP Client & Observables",
+          "duration": "27:50",
+          "url": "https://www.youtube.com/watch?v=4iJfY45zX30",
+          "thumbnail": "https://img.youtube.com/vi/4iJfY45zX30/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Vue.js Crash Course",
+      "instructor": "Kevin Scott",
+      "duration": "5 Weeks",
+      "level": "Beginner",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
+      "description": "Learn Vue.js basics to build lightweight and reactive web interfaces.",
+      "lessons": [
+        "Vue Introduction",
+        "Vue Components",
+        "Directives",
+        "Vue Router",
+        "State Management",
+        "Vue Project"
+      ],
+      "videos": [
+        {
+          "id": "v12_1",
+          "title": "Vue.js Crash Course (Traversy Media)",
+          "duration": "1:30:20",
+          "url": "https://www.youtube.com/watch?v=Wy9q22isx3U",
+          "thumbnail": "https://img.youtube.com/vi/Wy9q22isx3U/maxresdefault.jpg"
+        },
+        {
+          "id": "v12_2",
+          "title": "Vue Components Deep Dive",
+          "duration": "22:35",
+          "url": "https://www.youtube.com/watch?v=0L6Z1lZEqgY",
+          "thumbnail": "https://img.youtube.com/vi/0L6Z1lZEqgY/maxresdefault.jpg"
+        },
+        {
+          "id": "v12_3",
+          "title": "Vue Directives & Event Handling",
+          "duration": "18:50",
+          "url": "https://www.youtube.com/watch?v=YrxBCBibVo0",
+          "thumbnail": "https://img.youtube.com/vi/YrxBCBibVo0/maxresdefault.jpg"
+        },
+        {
+          "id": "v12_4",
+          "title": "Vue Router Tutorial",
+          "duration": "26:10",
+          "url": "https://www.youtube.com/watch?v=J_LnPL3Qg70",
+          "thumbnail": "https://img.youtube.com/vi/J_LnPL3Qg70/maxresdefault.jpg"
+        },
+        {
+          "id": "v12_5",
+          "title": "Vuex State Management",
+          "duration": "33:45",
+          "url": "https://www.youtube.com/watch?v=5lVQgZzLMHc",
+          "thumbnail": "https://img.youtube.com/vi/5lVQgZzLMHc/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Docker for Developers",
+      "instructor": "Brian Adams",
+      "duration": "4 Weeks",
+      "level": "Beginner",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwNLcCUBaC99r3nN10jX1asJQgcmxVzbtkgg&s",
+      "description": "Understand containerization and manage applications using Docker.",
+      "lessons": [
+        "Docker Basics",
+        "Containers and Images",
+        "Dockerfile",
+        "Docker Compose",
+        "Container Deployment"
+      ],
+      "videos": [
+        {
+          "id": "v13_1",
+          "title": "Docker Tutorial for Beginners (freeCodeCamp)",
+          "duration": "2:43:00",
+          "url": "https://www.youtube.com/watch?v=fqMOX6JJhGo",
+          "thumbnail": "https://img.youtube.com/vi/fqMOX6JJhGo/maxresdefault.jpg"
+        },
+        {
+          "id": "v13_2",
+          "title": "Docker Containers & Images Explained",
+          "duration": "19:25",
+          "url": "https://www.youtube.com/watch?v=0qotVMX-J5s",
+          "thumbnail": "https://img.youtube.com/vi/0qotVMX-J5s/maxresdefault.jpg"
+        },
+        {
+          "id": "v13_3",
+          "title": "How to Write a Dockerfile",
+          "duration": "15:40",
+          "url": "https://www.youtube.com/watch?v=YFl2mCHdv24",
+          "thumbnail": "https://img.youtube.com/vi/YFl2mCHdv24/maxresdefault.jpg"
+        },
+        {
+          "id": "v13_4",
+          "title": "Docker Compose Tutorial",
+          "duration": "21:55",
+          "url": "https://www.youtube.com/watch?v=HG6yIjZapSA",
+          "thumbnail": "https://img.youtube.com/vi/HG6yIjZapSA/maxresdefault.jpg"
+        },
+        {
+          "id": "v13_5",
+          "title": "Deploying Containers with Docker",
+          "duration": "28:10",
+          "url": "https://www.youtube.com/watch?v=Qw9zlE3t8Ko",
+          "thumbnail": "https://img.youtube.com/vi/Qw9zlE3t8Ko/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Kubernetes Essentials",
+      "instructor": "Lisa Turner",
+      "duration": "6 Weeks",
+      "level": "Intermediate",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg",
+      "description": "Learn container orchestration using Kubernetes for scalable deployments.",
+      "lessons": [
+        "Kubernetes Basics",
+        "Pods and Services",
+        "Deployments",
+        "Scaling Applications",
+        "Monitoring",
+        "Kubernetes Project"
+      ],
+      "videos": [
+        {
+          "id": "v14_1",
+          "title": "Kubernetes Tutorial for Beginners (freeCodeCamp)",
+          "duration": "2:25:00",
+          "url": "https://www.youtube.com/watch?v=X48VuDVv0do",
+          "thumbnail": "https://img.youtube.com/vi/X48VuDVv0do/maxresdefault.jpg"
+        },
+        {
+          "id": "v14_2",
+          "title": "Kubernetes Pods & Services Explained",
+          "duration": "18:30",
+          "url": "https://www.youtube.com/watch?v=5lzQz4n7p4Y",
+          "thumbnail": "https://img.youtube.com/vi/5lzQz4n7p4Y/maxresdefault.jpg"
+        },
+        {
+          "id": "v14_3",
+          "title": "Kubernetes Deployments & ReplicaSets",
+          "duration": "22:15",
+          "url": "https://www.youtube.com/watch?v=U5rLq5j6L-I",
+          "thumbnail": "https://img.youtube.com/vi/U5rLq5j6L-I/maxresdefault.jpg"
+        },
+        {
+          "id": "v14_4",
+          "title": "Scaling Applications in Kubernetes",
+          "duration": "16:40",
+          "url": "https://www.youtube.com/watch?v=U7PZ8fKXTZQ",
+          "thumbnail": "https://img.youtube.com/vi/U7PZ8fKXTZQ/maxresdefault.jpg"
+        },
+        {
+          "id": "v14_5",
+          "title": "Kubernetes Monitoring with Prometheus",
+          "duration": "29:55",
+          "url": "https://www.youtube.com/watch?v=h4Sl21AKiDg",
+          "thumbnail": "https://img.youtube.com/vi/h4Sl21AKiDg/maxresdefault.jpg"
+        },
+        {
+          "id": "v14_6",
+          "title": "Kubernetes Project: Deploy a Microservice App",
+          "duration": "42:20",
+          "url": "https://www.youtube.com/watch?v=2T86xAtR6Fo",
+          "thumbnail": "https://img.youtube.com/vi/2T86xAtR6Fo/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Cyber Security Basics",
+      "instructor": "Robert King",
+      "duration": "6 Weeks",
+      "level": "Beginner",
+      "thumbnail": "https://digialert.com/media/k2/items/cache/7acce66d40ec90c2d61987b409cbf850_XL.jpg",
+      "description": "Understand cyber threats and learn security best practices.",
+      "lessons": [
+        "Cybersecurity Overview",
+        "Network Security",
+        "Threat Detection",
+        "Encryption",
+        "Security Policies",
+        "Security Tools"
+      ],
+      "videos": [
+        {
+          "id": "v15_1",
+          "title": "Introduction to Cyber Security (freeCodeCamp)",
+          "duration": "1:14:30",
+          "url": "https://www.youtube.com/watch?v=z5nc9MDbvkw",
+          "thumbnail": "https://img.youtube.com/vi/z5nc9MDbvkw/maxresdefault.jpg"
+        },
+        {
+          "id": "v15_2",
+          "title": "Network Security Tutorial",
+          "duration": "35:20",
+          "url": "https://www.youtube.com/watch?v=6e6N2R2yUvU",
+          "thumbnail": "https://img.youtube.com/vi/6e6N2R2yUvU/maxresdefault.jpg"
+        },
+        {
+          "id": "v15_3",
+          "title": "Cyber Threat Detection & Analysis",
+          "duration": "28:45",
+          "url": "https://www.youtube.com/watch?v=U_P23SqJaDc",
+          "thumbnail": "https://img.youtube.com/vi/U_P23SqJaDc/maxresdefault.jpg"
+        },
+        {
+          "id": "v15_4",
+          "title": "Encryption & Cryptography Basics",
+          "duration": "22:10",
+          "url": "https://www.youtube.com/watch?v=6-JjHa-qLPk",
+          "thumbnail": "https://img.youtube.com/vi/6-JjHa-qLPk/maxresdefault.jpg"
+        },
+        {
+          "id": "v15_5",
+          "title": "Security Policies & Compliance",
+          "duration": "19:35",
+          "url": "https://www.youtube.com/watch?v=O0WgFhO6vBQ",
+          "thumbnail": "https://img.youtube.com/vi/O0WgFhO6vBQ/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Ethical Hacking Masterclass",
+      "instructor": "James Carter",
+      "duration": "9 Weeks",
+      "level": "Advanced",
+      "thumbnail": "https://d3mxt5v3yxgcsr.cloudfront.net/courses/21573/course_21573_image.jpeg",
+      "description": "Learn ethical hacking techniques to identify vulnerabilities in systems.",
+      "lessons": [
+        "Introduction to Ethical Hacking",
+        "Reconnaissance",
+        "Network Attacks",
+        "Web Application Attacks",
+        "Penetration Testing",
+        "Security Reporting"
+      ],
+      "videos": [
+        {
+          "id": "v16_1",
+          "title": "Ethical Hacking Course (freeCodeCamp)",
+          "duration": "12:30:00",
+          "url": "https://www.youtube.com/watch?v=3Kq1MIfTWCE",
+          "thumbnail": "https://img.youtube.com/vi/3Kq1MIfTWCE/maxresdefault.jpg"
+        },
+        {
+          "id": "v16_2",
+          "title": "Reconnaissance & Information Gathering",
+          "duration": "42:15",
+          "url": "https://www.youtube.com/watch?v=gYvLb_J0t78",
+          "thumbnail": "https://img.youtube.com/vi/gYvLb_J0t78/maxresdefault.jpg"
+        },
+        {
+          "id": "v16_3",
+          "title": "Network Attacks (MITM, DoS, etc.)",
+          "duration": "55:30",
+          "url": "https://www.youtube.com/watch?v=JrR1U7r0KUI",
+          "thumbnail": "https://img.youtube.com/vi/JrR1U7r0KUI/maxresdefault.jpg"
+        },
+        {
+          "id": "v16_4",
+          "title": "Web Application Attacks (SQLi, XSS)",
+          "duration": "1:08:20",
+          "url": "https://www.youtube.com/watch?v=2O8pkybH6po",
+          "thumbnail": "https://img.youtube.com/vi/2O8pkybH6po/maxresdefault.jpg"
+        },
+        {
+          "id": "v16_5",
+          "title": "Penetration Testing with Metasploit",
+          "duration": "47:10",
+          "url": "https://www.youtube.com/watch?v=8lR27r8Y_6c",
+          "thumbnail": "https://img.youtube.com/vi/8lR27r8Y_6c/maxresdefault.jpg"
+        },
+        {
+          "id": "v16_6",
+          "title": "Writing Security Reports",
+          "duration": "24:45",
+          "url": "https://www.youtube.com/watch?v=6m6zG6lT8ps",
+          "thumbnail": "https://img.youtube.com/vi/6m6zG6lT8ps/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "C Programming Fundamentals",
+      "instructor": "Rahul Verma",
+      "duration": "5 Weeks",
+      "level": "Beginner",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png",
+      "description": "Learn basic programming concepts using C language.",
+      "lessons": [
+        "Introduction to C",
+        "Variables and Data Types",
+        "Control Structures",
+        "Functions",
+        "Arrays",
+        "Pointers"
+      ],
+      "videos": [
+        {
+          "id": "v17_1",
+          "title": "C Programming Tutorial for Beginners (freeCodeCamp)",
+          "duration": "4:45:00",
+          "url": "https://www.youtube.com/watch?v=KJgsSFOSQv0",
+          "thumbnail": "https://img.youtube.com/vi/KJgsSFOSQv0/maxresdefault.jpg"
+        },
+        {
+          "id": "v17_2",
+          "title": "Variables & Data Types in C",
+          "duration": "18:30",
+          "url": "https://www.youtube.com/watch?v=7k_5P9v3C1M",
+          "thumbnail": "https://img.youtube.com/vi/7k_5P9v3C1M/maxresdefault.jpg"
+        },
+        {
+          "id": "v17_3",
+          "title": "Control Structures (if, else, loops)",
+          "duration": "22:15",
+          "url": "https://www.youtube.com/watch?v=Wfpww2pBq7A",
+          "thumbnail": "https://img.youtube.com/vi/Wfpww2pBq7A/maxresdefault.jpg"
+        },
+        {
+          "id": "v17_4",
+          "title": "Functions in C",
+          "duration": "20:40",
+          "url": "https://www.youtube.com/watch?v=lvFRg9vE9Ps",
+          "thumbnail": "https://img.youtube.com/vi/lvFRg9vE9Ps/maxresdefault.jpg"
+        },
+        {
+          "id": "v17_5",
+          "title": "Arrays in C",
+          "duration": "19:55",
+          "url": "https://www.youtube.com/watch?v=5XST8fRZ9Os",
+          "thumbnail": "https://img.youtube.com/vi/5XST8fRZ9Os/maxresdefault.jpg"
+        },
+        {
+          "id": "v17_6",
+          "title": "Pointers in C",
+          "duration": "24:10",
+          "url": "https://www.youtube.com/watch?v=f2i0CnUOniA",
+          "thumbnail": "https://img.youtube.com/vi/f2i0CnUOniA/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "C++ Object Oriented Programming",
+      "instructor": "Neha Sharma",
+      "duration": "7 Weeks",
+      "level": "Intermediate",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
+      "description": "Learn object oriented programming concepts using C++.",
+      "lessons": [
+        "OOP Concepts",
+        "Classes and Objects",
+        "Inheritance",
+        "Polymorphism",
+        "Exception Handling",
+        "C++ Project"
+      ],
+      "videos": [
+        {
+          "id": "v18_1",
+          "title": "C++ Object Oriented Programming (freeCodeCamp)",
+          "duration": "4:13:00",
+          "url": "https://www.youtube.com/watch?v=vLnPwxZdW4Y",
+          "thumbnail": "https://img.youtube.com/vi/vLnPwxZdW4Y/maxresdefault.jpg"
+        },
+        {
+          "id": "v18_2",
+          "title": "Classes & Objects in C++",
+          "duration": "26:35",
+          "url": "https://www.youtube.com/watch?v=iVLQeWbgbTk",
+          "thumbnail": "https://img.youtube.com/vi/iVLQeWbgbTk/maxresdefault.jpg"
+        },
+        {
+          "id": "v18_3",
+          "title": "Inheritance in C++",
+          "duration": "24:20",
+          "url": "https://www.youtube.com/watch?v=6lAKAyD3T8U",
+          "thumbnail": "https://img.youtube.com/vi/6lAKAyD3T8U/maxresdefault.jpg"
+        },
+        {
+          "id": "v18_4",
+          "title": "Polymorphism & Virtual Functions",
+          "duration": "29:45",
+          "url": "https://www.youtube.com/watch?v=oIV2KchSyGQ",
+          "thumbnail": "https://img.youtube.com/vi/oIV2KchSyGQ/maxresdefault.jpg"
+        },
+        {
+          "id": "v18_5",
+          "title": "Exception Handling in C++",
+          "duration": "21:10",
+          "url": "https://www.youtube.com/watch?v=6bCgA7YyYck",
+          "thumbnail": "https://img.youtube.com/vi/6bCgA7YyYck/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Java Programming Masterclass",
+      "instructor": "Vikram Singh",
+      "duration": "10 Weeks",
+      "level": "Advanced",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
+      "description": "Master Java programming concepts including OOP, collections, and multithreading.",
+      "lessons": [
+        "Java Basics",
+        "OOP in Java",
+        "Collections Framework",
+        "Exception Handling",
+        "Multithreading",
+        "Java Project"
+      ],
+      "videos": [
+        {
+          "id": "v19_1",
+          "title": "Java Programming for Beginners (freeCodeCamp)",
+          "duration": "9:00:00",
+          "url": "https://www.youtube.com/watch?v=grEKMHGYyns",
+          "thumbnail": "https://img.youtube.com/vi/grEKMHGYyns/maxresdefault.jpg"
+        },
+        {
+          "id": "v19_2",
+          "title": "Object Oriented Programming in Java",
+          "duration": "1:35:20",
+          "url": "https://www.youtube.com/watch?v=6T_HgnjoYwM",
+          "thumbnail": "https://img.youtube.com/vi/6T_HgnjoYwM/maxresdefault.jpg"
+        },
+        {
+          "id": "v19_3",
+          "title": "Java Collections Framework",
+          "duration": "1:22:45",
+          "url": "https://www.youtube.com/watch?v=rzA7UJ-hQn4",
+          "thumbnail": "https://img.youtube.com/vi/rzA7UJ-hQn4/maxresdefault.jpg"
+        },
+        {
+          "id": "v19_4",
+          "title": "Exception Handling in Java",
+          "duration": "28:30",
+          "url": "https://www.youtube.com/watch?v=1XafapPPSRU",
+          "thumbnail": "https://img.youtube.com/vi/1XafapPPSRU/maxresdefault.jpg"
+        },
+        {
+          "id": "v19_5",
+          "title": "Multithreading in Java",
+          "duration": "42:15",
+          "url": "https://www.youtube.com/watch?v=w0E6CgzRczU",
+          "thumbnail": "https://img.youtube.com/vi/w0E6CgzRczU/maxresdefault.jpg"
+        },
+        {
+          "id": "v19_6",
+          "title": "Java Project: Build a Banking Application",
+          "duration": "1:05:30",
+          "url": "https://www.youtube.com/watch?v=GOGt7PACl10",
+          "thumbnail": "https://img.youtube.com/vi/GOGt7PACl10/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Data Structures in Java",
+      "instructor": "Ankit Gupta",
+      "duration": "8 Weeks",
+      "level": "Intermediate",
+      "thumbnail": "https://cdn.educba.com/academy/wp-content/uploads/2020/01/data-structure-in-java.jpg",
+      "description": "Understand important data structures and algorithms using Java.",
+      "lessons": [
+        "Arrays",
+        "Linked Lists",
+        "Stacks",
+        "Queues",
+        "Trees",
+        "Graphs",
+        "Sorting Algorithms",
+        "DSA Project"
+      ],
+      "videos": [
+        {
+          "id": "v20_1",
+          "title": "Data Structures and Algorithms in Java (freeCodeCamp)",
+          "duration": "8:00:00",
+          "url": "https://www.youtube.com/watch?v=xWLxhF3b5N8",
+          "thumbnail": "https://img.youtube.com/vi/xWLxhF3b5N8/maxresdefault.jpg"
+        },
+        {
+          "id": "v20_2",
+          "title": "Arrays & ArrayLists in Java",
+          "duration": "32:10",
+          "url": "https://www.youtube.com/watch?v=oJjE-5e5l-U",
+          "thumbnail": "https://img.youtube.com/vi/oJjE-5e5l-U/maxresdefault.jpg"
+        },
+        {
+          "id": "v20_3",
+          "title": "Linked Lists in Java",
+          "duration": "38:25",
+          "url": "https://www.youtube.com/watch?v=o3Gfsc6kihk",
+          "thumbnail": "https://img.youtube.com/vi/o3Gfsc6kihk/maxresdefault.jpg"
+        },
+        {
+          "id": "v20_4",
+          "title": "Stacks & Queues in Java",
+          "duration": "27:40",
+          "url": "https://www.youtube.com/watch?v=Z4rR0l2I2Fk",
+          "thumbnail": "https://img.youtube.com/vi/Z4rR0l2I2Fk/maxresdefault.jpg"
+        },
+        {
+          "id": "v20_5",
+          "title": "Trees & Binary Search Trees",
+          "duration": "45:15",
+          "url": "https://www.youtube.com/watch?v=oSWTXtMglKE",
+          "thumbnail": "https://img.youtube.com/vi/oSWTXtMglKE/maxresdefault.jpg"
+        },
+        {
+          "id": "v20_6",
+          "title": "Graph Algorithms in Java",
+          "duration": "52:30",
+          "url": "https://www.youtube.com/watch?v=zaBhtODEL0w",
+          "thumbnail": "https://img.youtube.com/vi/zaBhtODEL0w/maxresdefault.jpg"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Sai",
+      "email": "ksaichaithanyaskpt@gmail.com",
+      "password": "sai@123",
+      "enrolledCourses": [],
+      "courseProgress": []
+    },
+    {
+      "id": "2",
+      "name": "Chaithanya",
+      "email": "chaithanya@gmail.com",
+      "password": "chaithanya@123",
+      "enrolledCourses": [],
+      "courseProgress": []
+    },
+    {
+      "id": "a919",
+      "name": "saketh",
+      "email": "saketh@gmail.com",
+      "password": "Saketh@12345",
+      "enrolledCourses": [],
+      "courseProgress": []
+    },
+    {
+      "id": "f607",
+      "name": "rohini",
+      "email": "rohini@gmail.com",
+      "password": "12345678",
+      "enrolledCourses": [
+        "3",
+        "2",
+        "1"
+      ],
+      "courseProgress": [
+        {
+          "courseId": "1",
+          "completedLessons": [
+            0,
+            1,
+            2,
+            4,
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
