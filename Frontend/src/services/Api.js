@@ -1,6 +1,6 @@
 // Update a user's courseProgress array
 export const updateUserCourseProgress = (userId, courseProgress) => {
-  return fetch(`http://localhost:5000/api/users/${userId}`, {
+  return fetch(`https://learning-management-system-backend-2loi.onrender.com/api/users/${userId}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json"
@@ -10,7 +10,7 @@ export const updateUserCourseProgress = (userId, courseProgress) => {
 };
 // Update a user's enrolledCourses array
 export const updateUserEnrolledCourses = (userId, enrolledCourses) => {
-  return fetch(`http://localhost:5000/api/users/${userId}`, {
+  return fetch(`https://learning-management-system-backend-2loi.onrender.com/api/users/${userId}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json"
@@ -19,18 +19,18 @@ export const updateUserEnrolledCourses = (userId, enrolledCourses) => {
   }).then(res => res.json());
 };
 export const getCourses = () => {
-  return fetch("http://localhost:5000/api/courses")
+  return fetch("https://learning-management-system-backend-2loi.onrender.com/api/courses")
     .then(res => res.json());
 };
 
 // User-related API functions
 export const getUsers = () => {
-  return fetch("http://localhost:5000/api/users")
+  return fetch("https://learning-management-system-backend-2loi.onrender.com/api/users")
     .then(res => res.json());
 };
 
 export const addUser = (user) => {
-  return fetch("http://localhost:5000/api/users", {
+  return fetch("https://learning-management-system-backend-2loi.onrender.com/api/users", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
