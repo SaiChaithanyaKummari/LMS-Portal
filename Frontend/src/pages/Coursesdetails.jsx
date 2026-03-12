@@ -63,12 +63,12 @@ export default function Coursesdetails() {
   };
 
   return (
-    <div className="py-4"style={{minHeight: "100vh",background: "#ffffff"}}>
+    <div className="py-4" style={{ minHeight: "100vh", background: "#ffffff" }}>
       <div className="container">
-        <div className="card border-0 shadow-lg mb-4"style={{ borderRadius: 20, overflow: "hidden" }}>
+        <div className="card border-0 shadow-lg mb-4" style={{ borderRadius: 20, overflow: "hidden" }}>
           <div className="row g-0">
             <div className="col-md-6">
-              <img src={course.thumbnail}alt={course.title}style={{ width: "100%", height: "100%", objectFit: "cover" }}/>
+              <img src={course.thumbnail} alt={course.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             </div>
             <div className="col-md-6">
               <div className="card-body h-100 d-flex flex-column">
@@ -82,7 +82,6 @@ export default function Coursesdetails() {
                   <button className="btn btn-dark" onClick={handleEnroll}>
                     Enroll now
                   </button>
-                  <button className="btn btn-outline-dark" onClick={() => navigate(`/player/${course.id}/0`)}>Play video</button>
                 </div>
               </div>
             </div>
