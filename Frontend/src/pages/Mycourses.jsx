@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "../assets/Loader.css";
 import { getCourses, getUsers } from "../services/Api";
 
 function Mycourses() {
@@ -33,8 +34,11 @@ function Mycourses() {
 
   if (loading) {
     return (
-      <div className="container mt-5">
-        <h3 className="text-muted">Loading your courses...</h3>
+      <div className="container mt-5 d-flex justify-content-center align-items-center" style={{ minHeight: "60vh" }}>
+        <div className="loader">
+          <span className="loader-text">loading</span>
+          <span className="load"></span>
+        </div>
       </div>
     );
   }
