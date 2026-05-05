@@ -34,4 +34,24 @@ router.patch('/:id', async (req, res) => {
     }
 });
 
+router.delete('/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+        const mongoose = require('mongoose');
+
+        // Try deleting by custom 'id' first, or by '_id' if it's a valid ObjectId
+        const query = mongoose.Types.ObjectId.isValid(id)
+            ? { $or: [{ id: id }, { _id: id }] }
+            : { id: id };
+
+        const deletedUser = await User.findOneAndDelete(query);
+        if (!deletedUser) {
+            return res.status(404).json({ message: "User not found" });
+        }
+        res.json({ message: "User deleted successfully" });
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
 module.exports = router;

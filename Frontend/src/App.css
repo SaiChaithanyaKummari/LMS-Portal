@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #ffffff;
+  background-color: #A89CFF;
   height: 100%;
 }
 
@@ -34,11 +34,28 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.card-text{
+.card-text {
   text-align: left;
+}
+
+.nav-link :hover {
+  color: #61dafb;
+}
+
+:root {
+  --leap-primary: #6C63FF;
+  --leap-secondary: #A89CFF;
+  --leap-accent: #FFD700;
+  --leap-dark: #0e0b1f;
+  --leap-darktext: #1a1440;
+  --leap-lightbg: #f4f3ff;
+
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
 }

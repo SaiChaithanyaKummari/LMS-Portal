@@ -109,79 +109,24 @@ export default function Player() {
   };
 
   return (
-    <div
-      className="py-4"
-      style={{
-        minHeight: "100vh",
-        background: "#ffffff",
-      }}
-    >
+    <div className="py-4" style={{ minHeight: "100vh", background: "#676382ff" }}>
       <div className="container">
-        <div
-          style={{
-            width: "100%",
-            borderRadius: 10,
-            display: "flex",
-            flexDirection: "row",
-            gap: 20,
-          }}
-        >
+        <div style={{ width: "100%", borderRadius: 10, display: "flex", flexDirection: "row", gap: 20, }}>
           <div className="mt-4 mb-3" style={{ width: "70%" }}>
-            <iframe
-              width="100%"
-              height="500"
-              src={currentVideo.url.replace("watch?v=", "embed/")}
-              title={currentVideo.title}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              style={{ background: "#222" }}
-            ></iframe>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                marginTop: 10,
-                gap: 10,
-              }}
-            >
-              <button
-                className="btn btn-secondary mb-3"
-                onClick={handleBack}
-                disabled={currentLesson === 0}
-              >
-                Back
-              </button>
+            <iframe width="100%" height="500" src={currentVideo.url.replace("watch?v=", "embed/")} title={currentVideo.title} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ background: "#222" }}></iframe>
+            <div style={{ display: "flex", justifyContent: "space-between", marginTop: 10, gap: 10, }}>
+              <button className="btn btn-secondary mb-3" onClick={handleBack} disabled={currentLesson === 0}>Back</button>
               <div style={{ display: "flex", gap: 10 }}>
-                <button
-                  className="btn btn-success mb-3"
-                  onClick={handleComplete}
-                  disabled={progress.includes(currentLesson)}
-                >
+                <button className="btn btn-success mb-3" onClick={handleComplete} disabled={progress.includes(currentLesson)}>
                   {progress.includes(currentLesson)
                     ? "Completed"
                     : "Mark as Complete"}
                 </button>
-                <button
-                  className="btn btn-primary mb-3"
-                  onClick={handleNext}
-                  disabled={currentLesson + 1 >= videos.length}
-                >
-                  Next
-                </button>
+                <button className="btn btn-primary mb-3" onClick={handleNext} disabled={currentLesson + 1 >= videos.length}>Next</button>
               </div>
             </div>
           </div>
-          <div
-            className="mt-4"
-            style={{
-              width: "30%",
-              padding: "30px 15px",
-              marginBottom: 40,
-              backgroundColor: "#f8f9fa",
-              borderRadius: 20,
-            }}
-          >
+          <div className="mt-4" style={{ width: "30%", padding: "30px 15px", marginBottom: 40, backgroundColor: "#f8f9fa", borderRadius: 20, }}>
             <Progressbar percent={percent} />
             <div style={{ padding: 4 }}>
               <h5>Next videos</h5>
@@ -190,21 +135,8 @@ export default function Player() {
               ) : (
                 <ul style={{ listStyle: "none", padding: 0 }}>
                   {nextLessons.map((l) => (
-                    <li
-                      key={l.idx}
-                      className="d-flex align-items-center mb-2"
-                    >
-                      <img
-                        src={l.thumbnail}
-                        alt={l.title}
-                        style={{
-                          width: 80,
-                          height: 45,
-                          objectFit: "cover",
-                          marginRight: 12,
-                          borderRadius: 4,
-                        }}
-                      />
+                    <li key={l.idx} className="d-flex align-items-center mb-2">
+                      <img src={l.thumbnail} alt={l.title} style={{ width: 80, height: 45, objectFit: "cover", marginRight: 12, borderRadius: 4 }} />
                       <span style={{ fontSize: 16 }}>{l.title}</span>
                     </li>
                   ))}

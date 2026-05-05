@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Coursecard from "../components/Coursecard";
 import { getCourses } from "../services/Api";
+import "../App.css";
 
 function Home() {
   const [courses, setCourses] = useState([]);
@@ -36,30 +37,18 @@ function Home() {
   );
 
   return (
-    <div
-      className="py-4"
-      style={{
-        minHeight: "100vh",
-        background: "#ffffff",
-      }}
-    >
+    <div className="py-4" style={{ minHeight: "100vh", background: "#171e19ff" }}>
       <div className="container">
         <div className="d-flex justify-content-between align-items-center mb-3">
           <div>
-            <h2 className="fw-bold text-dark mb-1">Available Courses</h2>
+            <h2 className="fw-bold text-white mb-1">Available Courses</h2>
             <p className="text-muted mb-0">
               Browse and start learning from our course catalog.
             </p>
           </div>
         </div>
 
-        <input
-          type="text"
-          placeholder="Search courses"
-          className="form-control mb-4"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
+        <input type="text" placeholder="Search courses" className="form-control mb-4" value={search} onChange={(e) => setSearch(e.target.value)} />
 
         {loading ? (
           <h5 className="text-muted">Loading courses...</h5>
