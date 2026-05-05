@@ -1,4 +1,4 @@
-
+import "../App.css";
 import { useNavigate } from "react-router-dom";
 
 function Coursecard({ course }) {
@@ -18,23 +18,11 @@ function Coursecard({ course }) {
   };
 
   return (
-    <div className="card h-100 shadow-sm border"
-      style={{
-        borderRadius: 16,
-        overflow: "hidden",
-        background: "#ffffff",
-        color: "#212529",
-      }}
-    >
+    <div className="card h-100" style={{ borderRadius: 16, overflow: "hidden", background: "#e695098d", color: "#212529", border: "1px solid #0e0b1f" }}>
       <div style={{ height: 180, overflow: "hidden" }}>
-        <img
-          src={course.thumbnail}
-          className="card-img-top"
-          alt={course.title}
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-        />
+        <img src={course.thumbnail} className="card-img-top" alt={course.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       </div>
-      <div className="card-body d-flex flex-column">
+      <div className="card-body d-flex flex-column" >
         <h5 className="card-title mb-2">{course.title}</h5>
         <p className="card-text text-muted mb-1" style={{ fontSize: 14 }}>
           {course.instructor}
@@ -43,9 +31,8 @@ function Coursecard({ course }) {
           {course.duration}
         </p>
         <button
-          className="btn btn-dark mt-auto"
-          onClick={handleViewCourse}
-        >
+          className="btn mt-auto" style={{ backgroundColor: "var(--leap-primary)", color: "var(--leap-lightbg)" }}
+          onClick={handleViewCourse}>
           Start learning
         </button>
       </div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { getCourses, addCourse, updateCourse, deleteCourse } from "../services/Api";
+import { getCourses, addCourse, updateCourse, deleteCourse, getUsers, deleteUser } from "../services/Api";
 
 const emptyForm = {
   title: "", instructor: "", duration: "", level: "Beginner",
@@ -10,6 +10,8 @@ const emptyForm = {
 export default function AdminPortal() {
   const navigate = useNavigate();
   const [courses, setCourses] = useState([]);
+  const [users, setUsers] = useState([]);
+  const [activeTab, setActiveTab] = useState("courses"); // "courses" or "users"
   const [loading, setLoading] = useState(true);
   const [showForm, setShowForm] = useState(false);
   const [editing, setEditing] = useState(null);
@@ -23,6 +25,7 @@ export default function AdminPortal() {
       return;
     }
     loadCourses();
+    loadUsers();
   }, [navigate]);
 
   const loadCourses = () => {
@@ -31,6 +34,12 @@ export default function AdminPortal() {
       .then((data) => setCourses(Array.isArray(data) ? data : []))
       .catch(() => setCourses([]))
       .finally(() => setLoading(false));
+  };
+
+  const loadUsers = () => {
+    getUsers()
+      .then((data) => setUsers(Array.isArray(data) ? data : []))
+      .catch(() => setUsers([]));
   };
 
   const handleChange = (e) => {
@@ -116,6 +125,17 @@ export default function AdminPortal() {
     }
   };
 
+  const handleDeleteUser = async (id) => {
+    if (!window.confirm("Are you sure you want to delete this user?")) return;
+    try {
+      await deleteUser(id);
+      setMsg("User deleted.");
+      loadUsers();
+    } catch {
+      setMsg("Failed to delete user.");
+    }
+  };
+
   const cancelForm = () => {
     setShowForm(false);
     setEditing(null);
@@ -123,16 +143,34 @@ export default function AdminPortal() {
   };
 
   return (
-    <div style={{ minHeight: "100vh", background: "#ffffff" }} className="py-4">
+    <div style={{ minHeight: "100vh", background: "#676382ff" }} className="py-4">
       <div className="container">
         <div className="d-flex justify-content-between align-items-center mb-4">
           <div>
             <h2 className="fw-bold text-dark mb-1">Admin Portal</h2>
-            <p className="text-muted mb-0">Manage all courses in the platform.</p>
+            <p className="text-muted mb-0">Manage the platform resources.</p>
           </div>
-          <button className="btn btn-dark" onClick={openAdd}>
-            + Add Course
-          </button>
+          <div className="d-flex gap-2">
+            <div className="btn-group me-3">
+              <button
+                className={`btn ${activeTab === "courses" ? "btn-dark" : "btn-outline-dark"}`}
+                onClick={() => setActiveTab("courses")}
+              >
+                Courses
+              </button>
+              <button
+                className={`btn ${activeTab === "users" ? "btn-dark" : "btn-outline-dark"}`}
+                onClick={() => setActiveTab("users")}
+              >
+                Users
+              </button>
+            </div>
+            {activeTab === "courses" && (
+              <button className="btn btn-dark" onClick={openAdd}>
+                + Add Course
+              </button>
+            )}
+          </div>
         </div>
 
         {msg && (
@@ -180,7 +218,7 @@ export default function AdminPortal() {
                     <label className="form-label fw-semibold">Lessons (comma-separated)</label>
                     <input name="lessons" className="form-control" placeholder="Lesson 1, Lesson 2, ..." value={form.lessons} onChange={handleChange} />
                   </div>
-                  
+
                   <div className="col-12 mt-3">
                     <label className="form-label fw-semibold d-block">Videos</label>
                     {form.videos.map((vid, i) => (
@@ -216,43 +254,86 @@ export default function AdminPortal() {
         )}
 
         {loading ? (
-          <h5 className="text-muted">Loading courses...</h5>
-        ) : courses.length === 0 ? (
-          <h5 className="text-muted">No courses found.</h5>
-        ) : (
-          <div className="table-responsive">
-            <table className="table table-hover align-middle">
-              <thead className="table-dark">
-                <tr>
-                  <th>#</th>
-                  <th>Title</th>
-                  <th>Instructor</th>
-                  <th>Duration</th>
-                  <th>Level</th>
-                  <th style={{ width: 160 }}>Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                {courses.map((course, idx) => (
-                  <tr key={course.id || course._id}>
-                    <td>{idx + 1}</td>
-                    <td className="fw-semibold">{course.title}</td>
-                    <td>{course.instructor}</td>
-                    <td>{course.duration}</td>
-                    <td>
-                      <span className={`badge ${course.level === "Beginner" ? "bg-success" : course.level === "Intermediate" ? "bg-primary" : "bg-danger"}`}>
-                        {course.level}
-                      </span>
-                    </td>
-                    <td>
-                      <button className="btn btn-sm btn-outline-dark me-2" onClick={() => openEdit(course)}>Edit</button>
-                      <button className="btn btn-sm btn-outline-danger" onClick={() => handleDelete(course.id)}>Delete</button>
-                    </td>
+          <h5 className="text-muted">Loading...</h5>
+        ) : activeTab === "courses" ? (
+          courses.length === 0 ? (
+            <h5 className="text-muted">No courses found.</h5>
+          ) : (
+            <div className="table-responsive">
+              <table className="table table-hover align-middle">
+                <thead className="table-dark">
+                  <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Instructor</th>
+                    <th>Duration</th>
+                    <th>Level</th>
+                    <th style={{ width: 160 }}>Actions</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                </thead>
+                <tbody>
+                  {courses.map((course, idx) => (
+                    <tr key={course.id || course._id}>
+                      <td>{idx + 1}</td>
+                      <td className="fw-semibold">{course.title}</td>
+                      <td>{course.instructor}</td>
+                      <td>{course.duration}</td>
+                      <td>
+                        <span className={`badge ${course.level === "Beginner" ? "bg-success" : course.level === "Intermediate" ? "bg-primary" : "bg-danger"}`}>
+                          {course.level}
+                        </span>
+                      </td>
+                      <td>
+                        <button className="btn btn-sm btn-outline-dark me-2" onClick={() => openEdit(course)}>Edit</button>
+                        <button className="btn btn-sm btn-outline-danger" onClick={() => handleDelete(course.id)}>Delete</button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )
+        ) : (
+          users.length === 0 ? (
+            <h5 className="text-muted">No users found.</h5>
+          ) : (
+            <div className="table-responsive">
+              <table className="table table-hover align-middle">
+                <thead className="table-dark">
+                  <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th style={{ width: 100 }}>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {users.map((user, idx) => (
+                    <tr key={user.id || user._id}>
+                      <td>{idx + 1}</td>
+                      <td className="fw-semibold">{user.name}</td>
+                      <td>{user.email}</td>
+                      <td>
+                        <span className={`badge ${user.role === "admin" ? "bg-dark" : "bg-secondary"}`}>
+                          {user.role}
+                        </span>
+                      </td>
+                      <td>
+                        <button
+                          className="btn btn-sm btn-outline-danger"
+                          onClick={() => handleDeleteUser(user.id || user._id)}
+                          disabled={user.role === "admin"}
+                        >
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )
         )}
       </div>
     </div>

@@ -41,6 +41,12 @@ export const addUser = (user) => {
   }).then(res => res.json());
 };
 
+export const deleteUser = (id) => {
+  return fetch(`${API_BASE}/api/users/${id}`, {
+    method: "DELETE"
+  }).then(res => res.json());
+};
+
 // Course CRUD for Admin
 export const addCourse = (course) => {
   return fetch(`${API_BASE}/api/courses`, {

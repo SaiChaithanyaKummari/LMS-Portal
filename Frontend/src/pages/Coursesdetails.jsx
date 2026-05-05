@@ -9,6 +9,7 @@ export default function Coursesdetails() {
   const [course, setCourse] = useState(null);
   const [allCourses, setAllCourses] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
     getCourses().then((data) => {
@@ -17,6 +18,13 @@ export default function Coursesdetails() {
       setCourse(found || null);
       setLoading(false);
     });
+
+    // Check if user is admin
+    const stored = localStorage.getItem("user");
+    if (stored) {
+      const currentUser = JSON.parse(stored);
+      setIsAdmin(currentUser.role === "admin");
+    }
   }, [id]);
 
   if (loading) {
@@ -62,10 +70,15 @@ export default function Coursesdetails() {
     navigate("/mycourses");
   };
 
+  const handleVerify = () => {
+    // For admin users, navigate directly to player without enrolling
+    navigate(`/player/${course.id}/0`);
+  };
+
   return (
-    <div className="py-4" style={{ minHeight: "100vh", background: "#ffffff" }}>
+    <div className="py-4" style={{ minHeight: "100vh", background: "#676382ff" }}>
       <div className="container">
-        <div className="card border-0 shadow-lg mb-4" style={{ borderRadius: 20, overflow: "hidden" }}>
+        <div className="card border-0 shadow-lg mb-4" style={{ borderRadius: 20, overflow: "hidden", background: "#ffffff8d" }}>
           <div className="row g-0">
             <div className="col-md-6">
               <img src={course.thumbnail} alt={course.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
@@ -79,9 +92,15 @@ export default function Coursesdetails() {
                 {course.level && <p className="card-text mb-1"><strong>Level:</strong> {course.level}</p>}
                 {course.lessons && <p className="card-text mb-2"><strong>Lessons:</strong> {course.lessons.join(", ")}</p>}
                 <div className="mt-auto d-flex gap-3">
-                  <button className="btn btn-dark" onClick={handleEnroll}>
-                    Enroll now
-                  </button>
+                  {isAdmin ? (
+                    <button className="btn btn-dark" onClick={handleVerify}>
+                      Verify
+                    </button>
+                  ) : (
+                    <button className="btn btn-dark" onClick={handleEnroll}>
+                      Enroll now
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
