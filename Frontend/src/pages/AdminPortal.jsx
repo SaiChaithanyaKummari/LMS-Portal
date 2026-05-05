@@ -143,7 +143,7 @@ export default function AdminPortal() {
   };
 
   return (
-    <div style={{ minHeight: "100vh", background: "#676382ff" }} className="py-4">
+    <div style={{ minHeight: "100vh", background: "#9B93E8" }} className="py-4">
       <div className="container">
         <div className="d-flex justify-content-between align-items-center mb-4">
           <div>

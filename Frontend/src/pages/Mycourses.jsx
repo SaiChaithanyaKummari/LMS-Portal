@@ -44,8 +44,8 @@ function Mycourses() {
 
   if (loading) {
     return (
-      <div className="container mt-5 d-flex justify-content-center align-items-center" style={{ minHeight: "60vh" }}>
-        <div className="loader">
+      <div className="container mt-4 d-flex justify-content-center align-items-center" style={{ minHeight: "100vh" }}>
+        <div className="loader color-dark">
           <span className="loader-text">loading</span>
           <span className="load"></span>
         </div>
@@ -54,7 +54,7 @@ function Mycourses() {
   }
 
   return (
-    <div className="py-5" style={{ minHeight: "100vh", background: "#676382ff" }}>
+    <div className="py-5" style={{ minHeight: "100vh", background: "#9B93E8" }}>
       <div className="container">
         <div className="d-flex justify-content-between align-items-center mb-4">
           <div>
@@ -68,7 +68,7 @@ function Mycourses() {
         {isAdmin ? (
           <div
             className="d-flex flex-column align-items-center justify-content-center text-center"
-            style={{ padding: "60px 20px", borderRadius: "20px", background: "#ffffff8d" }}>
+            style={{ padding: "60px 20px", borderRadius: "20px", background: "#e0e0e0" }}>
             <h4 className="text-black mb-3">Admin View - My Courses</h4>
             <p className="text-muted mb-3">Admins can manage courses in the Admin Portal.</p>
             <button className="btn btn-dark px-4" onClick={() => navigate("/adminportal")}>Go to Admin Portal</button>
@@ -76,7 +76,7 @@ function Mycourses() {
         ) : enrolledCourses.length === 0 ? (
           <div
             className="d-flex flex-column align-items-center justify-content-center text-center"
-            style={{ padding: "60px 20px", borderRadius: "20px", background: "#ffffff8d" }}>
+            style={{ padding: "60px 20px", borderRadius: "20px", background: "#e0e0e0" }}>
             <h4 className="text-black mb-3">No courses enrolled yet</h4>
             <button className="btn btn-dark px-4" onClick={() => navigate("/")}>Browse Courses</button>
           </div>
@@ -84,7 +84,7 @@ function Mycourses() {
           <div className="row g-4">
             {enrolledCourses.map((course) => (
               <div className="col-md-6 col-lg-4" key={course.id}>
-                <div className="card h-100 shadow-sm border" style={{ borderRadius: "15px", overflow: "hidden", background: "#ffffff", color: "#212529", }}>
+                <div className="card h-100 shadow-sm " style={{ borderRadius: "15px", overflow: "hidden", background: "#e0e0e0", color: "#212529",border: "1px solid #9B93E8" }}>
                   <div style={{ height: 180, overflow: "hidden" }}>
                     <img src={course.thumbnail} alt={course.title} style={{ width: "100%", height: "100%", objectFit: "cover", }} />
                   </div>

@@ -18,7 +18,7 @@ function Coursecard({ course }) {
   };
 
   return (
-    <div className="card h-100" style={{ borderRadius: 16, overflow: "hidden", background: "#e695098d", color: "#212529", border: "1px solid #0e0b1f" }}>
+    <div className="card h-100" style={{ borderRadius: 16, overflow: "hidden", background: "#e0e0e0", color: "#212529", border: "1px solid #9B93E8" }}>
       <div style={{ height: 180, overflow: "hidden" }}>
         <img src={course.thumbnail} className="card-img-top" alt={course.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       </div>

@@ -37,7 +37,7 @@ function Home() {
   );
 
   return (
-    <div className="py-4" style={{ minHeight: "100vh", background: "#171e19ff" }}>
+    <div className="py-4" style={{ minHeight: "100vh", background: "#9B93E8" }}>
       <div className="container">
         <div className="d-flex justify-content-between align-items-center mb-3">
           <div>
@@ -50,8 +50,13 @@ function Home() {
 
         <input type="text" placeholder="Search courses" className="form-control mb-4" value={search} onChange={(e) => setSearch(e.target.value)} />
 
-        {loading ? (
-          <h5 className="text-muted">Loading courses...</h5>
+        {loading ? ( 
+        <div className="container mt-4 d-flex justify-content-center align-items-center" style={{ minHeight: "100%" }}>
+        <div className="loader color-dark g-10" >
+          <span className="loader-text">loading Courses</span>
+          <span className="load"></span>
+        </div>
+      </div>
         ) : error ? (
           <div className="text-center py-4">
             <h5 className="text-danger">{error}</h5>

@@ -45,7 +45,7 @@ function Signup() {
   return (
     <div
       className="d-flex justify-content-center align-items-center vh-100"
-      style={{ background: "#676382ff" }}>
+      style={{ background: "#9B93E8" }}>
       <div
         className="card p-4 shadow-lg border-0"
         style={{ width: "420px", borderRadius: "20px", background: "#ffffff" }}>

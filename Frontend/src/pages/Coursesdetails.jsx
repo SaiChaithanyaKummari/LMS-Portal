@@ -29,8 +29,11 @@ export default function Coursesdetails() {
 
   if (loading) {
     return (
-      <div className="container mt-4">
-        <h2 className="text-muted">Loading course...</h2>
+      <div className="container mt-4 d-flex justify-content-center align-items-center" style={{ minHeight: "100vh" }}>
+        <div className="loader">
+          <span className="loader-text color-dark">loading courses</span>
+          <span className="load"></span>
+        </div>
       </div>
     );
   }
@@ -76,9 +79,9 @@ export default function Coursesdetails() {
   };
 
   return (
-    <div className="py-4" style={{ minHeight: "100vh", background: "#676382ff" }}>
+    <div className="py-4" style={{ minHeight: "100vh", background: "#9B93E8" }}>
       <div className="container">
-        <div className="card border-0 shadow-lg mb-4" style={{ borderRadius: 20, overflow: "hidden", background: "#ffffff8d" }}>
+        <div className="card border-0 shadow-lg mb-4" style={{ borderRadius: 20, overflow: "hidden", background: "#e0e0e0" }}>
           <div className="row g-0">
             <div className="col-md-6">
               <img src={course.thumbnail} alt={course.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />

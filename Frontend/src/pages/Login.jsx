@@ -38,7 +38,7 @@ function Login() {
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center vh-100" style={{ background: "#676382ff" }}>
+    <div className="d-flex justify-content-center align-items-center vh-100" style={{ background: "#9B93E8" }}>
       <div className="card p-4 shadow-lg border" style={{ width: "420px", borderRadius: "20px", background: "#ffffff", }}>
         <h3 className="text-center mb-3 fw-bold">Welcome back</h3>
         <p className="text-center text-muted mb-4">Log in to continue your learning journey.</p>
